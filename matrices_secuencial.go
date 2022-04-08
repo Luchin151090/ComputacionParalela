@@ -42,7 +42,9 @@ func multiplicar(fila int,columna int){
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
           }else if i>=cua3 && j<cua3{
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
-          }
+	  }else{
+		    c[i][j]=c[i][j]+(a[i][k]*b[k][j])
+	  }
         }
       }
     }
@@ -60,7 +62,9 @@ func multiplicar(fila int,columna int){
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
           }else if i>=cua3 && j<cua3{
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
-          }
+	  }else{
+		 c[i][j]=c[i][j]+(a[i][k]*b[k][j])
+	  }
         }
       }
     }    
