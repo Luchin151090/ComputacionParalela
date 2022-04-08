@@ -41,12 +41,18 @@ func (m Matriz) run(){
         c[i][j]=0
         for k:=0;k<m.columna;k++{
           if i<cua1 && j<cua1{
+		  time.Sleep(551*time.Millisecond)
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
           }else if i<cua2 && j>=cua2{
+		   time.Sleep(551*time.Millisecond)
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
           }else if i>=cua3 && j<cua3{
+		   time.Sleep(551*time.Millisecond)
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
-          }
+	  }else{
+		time.Sleep(551*time.Millisecond)
+            c[i][j]=c[i][j]+(a[i][k]*b[k][j])
+	  }
         }
       }
     }
@@ -64,7 +70,10 @@ func (m Matriz) run(){
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
           }else if i>=cua3 && j<cua3{
             c[i][j]=c[i][j]+(a[i][k]*b[k][j])
-          }
+	  }else{
+		time.Sleep(551*time.Millisecond)
+            c[i][j]=c[i][j]+(a[i][k]*b[k][j])
+	  }
         }
       }
     }    
